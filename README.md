@@ -45,4 +45,14 @@ Mengimplementasikan notifikasi bebas. Contoh: ketika jam tertentu ada pengingat 
 
 OVERVIEW TAMPILAN:
 user :
+![Screenshot 2023-12-22 205352](https://github.com/triramboe/UASPPPB1/assets/133026082/9757c010-8fb0-4242-8b57-273b627381a9)
+
+
+admin :
+![image](https://github.com/triramboe/UASPPPB1/assets/133026082/0961fa24-363d-447c-9505-cf159d84edcc)
+
+
+
+LINK GDRIVE video demonstrasi:
+https://drive.google.com/drive/folders/1JNQ82cNWbX2_VQTL3BnjuKSwFegkiFih?usp=sharing
 
