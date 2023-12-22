@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Makanan"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <EditText
+        android:id="@+id/editMakananName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Masukan Nama Makanan"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Kalori / 100gr :"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <EditText
+        android:id="@+id/editJumlahKalori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Jumlah Kalori"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi :"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <EditText
+        android:id="@+id/editDeskripsiMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Masukan Deskripsi"/>
+
+</LinearLayout>

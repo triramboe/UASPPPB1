@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calorie UAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="list_makan">
+        <item>Makan Pagi</item>
+        <item>Makan Siang</item>
+        <item>Makan Malam</item>
+    </array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "163925788785",
+    "project_id": "calorie-uas",
+    "storage_bucket": "calorie-uas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163925788785:android:c580a43f49e91a3c30f3d0",
+        "android_client_info": {
+          "package_name": "com.example.calorieuas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMsW6riyT02fJzQ7J0OkeTxygeOatXWVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

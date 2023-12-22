@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/homeWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Hai RAMBS"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/homeTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="Tanggal Hari ini"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/home_slider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="konsumsi kalori hari ini"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tampDataHome"
+                android:orientation="vertical"
+                android:background="@drawable/bg_putih_rounded">
+
+                <!-- Tambahan SeekBar -->
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:thumbTint="@color/blue"
+                    android:thumbTintMode="src_in"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Data Target Kalori -->
+                    <TextView
+                        android:id="@+id/textTargetKalori"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Target Kalori "
+                        android:layout_weight="3"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:id="@+id/valueTargetKalori"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Null"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins_regular"
+                         />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Data Konsumsi Kalori -->
+                    <TextView
+                        android:id="@+id/textKonsumsiKalori"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Konsumsi Kalori "
+                        android:layout_weight="3"
+                        android:textSize="15sp"
+                        android:layout_marginStart="16dp"
+                        />
+                    <TextView
+                        android:id="@+id/valueKonsumsiKalori"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Null"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <!-- Data Sisa Kalori -->
+                    <TextView
+                        android:id="@+id/textSisaKalori"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sisa Kalori "
+                        android:layout_weight="3"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginVertical="10dp"/>
+
+                    <TextView
+                        android:id="@+id/valueSisaKalori"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Null"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginVertical="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
