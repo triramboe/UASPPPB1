@@ -28,5 +28,9 @@ interface MakananDao {
     @Query("SELECT SUM(jumlah_kalori) FROM custom_foods WHERE userId = :userId")
     fun getTotalCalories(userId: String): Int
 
+    @Query("SELECT * FROM custom_foods WHERE userId = :userId AND nama_makanan LIKE :searchQuery")
+    fun searchMakananByUserId(userId: String, searchQuery: String): LiveData<List<MakananUser>>
+
+
 
 }
