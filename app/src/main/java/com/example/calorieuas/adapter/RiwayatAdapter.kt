@@ -1,3 +1,5 @@
+package com.example.calorieuas.adapter
+
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -5,11 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.calorieuas.AdminDialog
-import com.example.calorieuas.MainActivity
-import com.example.calorieuas.MakananUser
+import com.example.calorieuas.user.MainActivity
+import com.example.calorieuas.table.MakananUser
 import com.example.calorieuas.R
-import com.example.calorieuas.RiwayatDialog
+import com.example.calorieuas.dialog.RiwayatDialog
 
 class RiwayatAdapter(context: Context) : RecyclerView.Adapter<RiwayatAdapter.MyViewHolder>() {
 

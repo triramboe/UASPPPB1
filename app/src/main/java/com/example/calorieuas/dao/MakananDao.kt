@@ -1,4 +1,4 @@
-package com.example.calorieuas
+package com.example.calorieuas.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -6,6 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import com.example.calorieuas.table.MakananUser
 
 @Dao
 interface MakananDao {
@@ -23,6 +24,9 @@ interface MakananDao {
 
     @Query("SELECT * FROM custom_foods")
      fun getAllMakanan(): LiveData<List<MakananUser>>
+
+    @Query("SELECT SUM(jumlah_kalori) FROM custom_foods WHERE userId = :userId")
+    fun getTotalCalories(userId: String): Int
 
 
 }

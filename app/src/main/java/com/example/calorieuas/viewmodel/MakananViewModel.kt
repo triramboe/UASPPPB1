@@ -1,9 +1,11 @@
-package com.example.calorieuas
+package com.example.calorieuas.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.calorieuas.table.MakananUser
+import com.example.calorieuas.database.MakananDatabase
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch  // Make sure this import statement is correct

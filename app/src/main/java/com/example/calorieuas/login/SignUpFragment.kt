@@ -1,6 +1,5 @@
-package com.example.calorieuas
+package com.example.calorieuas.login
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
-import com.example.calorieuas.databinding.FragmentLoginBinding
+import com.example.calorieuas.user.MainActivity
+import com.example.calorieuas.R
+import com.example.calorieuas.SessionManager
 import com.example.calorieuas.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore

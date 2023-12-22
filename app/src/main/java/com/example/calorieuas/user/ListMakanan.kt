@@ -1,6 +1,6 @@
-package com.example.calorieuas
+package com.example.calorieuas.user
 
-import ListMakananAdapter
+import com.example.calorieuas.adapter.ListMakananAdapter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,12 +9,12 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calorieuas.databinding.ActivityListMakananBinding
+import com.example.calorieuas.table.MakananItem
+import com.example.calorieuas.user.KustomMakanan
 import com.google.firebase.firestore.DocumentChange
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
-import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QuerySnapshot
-import java.util.EventListener
 
 class ListMakanan : AppCompatActivity() {
 

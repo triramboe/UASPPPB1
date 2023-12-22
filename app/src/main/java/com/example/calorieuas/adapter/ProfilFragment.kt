@@ -1,10 +1,12 @@
+package com.example.calorieuas.adapter
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.calorieuas.LoginSignUp
+import com.example.calorieuas.login.LoginSignUp
 import com.example.calorieuas.SessionManager
 import com.example.calorieuas.databinding.FragmentProfilBinding
 import com.google.firebase.auth.FirebaseAuth

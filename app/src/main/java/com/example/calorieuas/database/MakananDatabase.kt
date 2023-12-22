@@ -1,9 +1,11 @@
-package com.example.calorieuas
+package com.example.calorieuas.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.calorieuas.table.MakananUser
+import com.example.calorieuas.dao.MakananDao
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @Database(entities = [MakananUser::class], version = 1)
@@ -12,7 +14,7 @@ abstract class MakananDatabase : RoomDatabase() {
 
     companion object {
         @Volatile
-        private var INSTANCE : MakananDatabase ? = null
+        private var INSTANCE : MakananDatabase? = null
         @OptIn(InternalCoroutinesApi::class)
         fun getDatabase(context: Context) : MakananDatabase?{
             if (INSTANCE == null){
@@ -25,6 +27,7 @@ abstract class MakananDatabase : RoomDatabase() {
             }
             return INSTANCE
         }
+
 
     }
 }

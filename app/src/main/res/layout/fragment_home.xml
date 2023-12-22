@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
+    tools:context=".user.HomeFragment"
     android:orientation="vertical">
 
     <androidx.core.widget.NestedScrollView
@@ -49,6 +49,17 @@
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="20sp"/>
 
+            <ProgressBar
+                android:id="@+id/progressBarHome"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="10dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -56,22 +67,13 @@
                 android:orientation="vertical"
                 android:background="@drawable/bg_putih_rounded">
 
-                <!-- Tambahan SeekBar -->
-                <SeekBar
-                    android:id="@+id/seekBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:max="100"
-                    android:progress="50"
-                    android:thumbTint="@color/blue"
-                    android:thumbTintMode="src_in"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="16dp"/>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
                     <!-- Data Target Kalori -->
                     <TextView
                         android:id="@+id/textTargetKalori"

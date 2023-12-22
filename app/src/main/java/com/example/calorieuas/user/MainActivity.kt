@@ -1,10 +1,13 @@
-package com.example.calorieuas
+package com.example.calorieuas.user
 
-import ProfilFragment
-import RiwayatFragment
+import com.example.calorieuas.adapter.ProfilFragment
+import com.example.calorieuas.viewmodel.RiwayatFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.calorieuas.R
+import com.example.calorieuas.dao.MakananDao
+import com.example.calorieuas.database.MakananDatabase
 import com.example.calorieuas.databinding.ActivityMainBinding
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors

@@ -1,6 +1,5 @@
-package com.example.calorieuas
+package com.example.calorieuas.user
 
-import RiwayatFragment
 import android.R
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +8,8 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.calorieuas.databinding.ActivityKustomMakananBinding
+import com.example.calorieuas.table.MakananUser
+import com.example.calorieuas.viewmodel.MakananViewModel
 import com.google.firebase.auth.FirebaseAuth
 
 class KustomMakanan : AppCompatActivity() {

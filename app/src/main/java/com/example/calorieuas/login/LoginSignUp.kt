@@ -1,9 +1,13 @@
-package com.example.calorieuas
+package com.example.calorieuas.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
+import com.example.calorieuas.adapter.FragmentLoginAdapter
+import com.example.calorieuas.user.MainActivity
+import com.example.calorieuas.admin.MainActivityAdmin
+import com.example.calorieuas.SessionManager
 import com.example.calorieuas.databinding.ActivityLoginSignUpBinding
 import com.google.android.material.tabs.TabLayout
 

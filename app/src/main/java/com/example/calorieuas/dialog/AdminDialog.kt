@@ -1,13 +1,14 @@
-package com.example.calorieuas
+package com.example.calorieuas.dialog
 
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import com.example.calorieuas.table.FoodItem
+import com.example.calorieuas.admin.MainActivityAdmin
 import com.example.calorieuas.databinding.DetailMakananBinding
 
-class AdminDialog (private val activity: MainActivityAdmin, private val foodItem :FoodItem? = null):
+class AdminDialog (private val activity: MainActivityAdmin, private val foodItem : FoodItem? = null):
 DialogFragment(){
     val binding by lazy {
         DetailMakananBinding.inflate(layoutInflater)
@@ -19,10 +20,12 @@ DialogFragment(){
             if (foodItem == null){
                 setPositiveButton("Tambah"){
                     dialog, which ->
-                    insert(FoodItem(
+                    insert(
+                        FoodItem(
                         itemName = binding.editMakananName.text.toString(),
                         calories = binding.editJumlahKalori.text.toString(),
-                        deskripsi = binding.editDeskripsiMakanan.text.toString()))
+                        deskripsi = binding.editDeskripsiMakanan.text.toString())
+                    )
                     dismiss()
                 }
             }

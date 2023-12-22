@@ -1,3 +1,5 @@
+package com.example.calorieuas.adapter
+
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -5,22 +7,20 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.calorieuas.FoodItem
-import com.example.calorieuas.KustomMakanan
-import com.example.calorieuas.MakananItem
+import com.example.calorieuas.user.KustomMakanan
+import com.example.calorieuas.table.MakananItem
 import com.example.calorieuas.R
-import com.example.calorieuas.databinding.ItemMakananBinding
 
 class ListMakananAdapter (private val makananList : ArrayList<MakananItem>) : RecyclerView.Adapter<ListMakananAdapter.MyViewHolder>(){
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ListMakananAdapter.MyViewHolder {
+    ): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_makanan, parent, false)
         return MyViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: ListMakananAdapter.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         val makanan : MakananItem = makananList[position]
 

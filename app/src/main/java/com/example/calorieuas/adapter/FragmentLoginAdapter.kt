@@ -1,9 +1,11 @@
-package com.example.calorieuas
+package com.example.calorieuas.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.calorieuas.login.LoginFragment
+import com.example.calorieuas.login.SignUpFragment
 
 class FragmentLoginAdapter (fragmetManager :FragmentManager, lifecycle: Lifecycle):
         FragmentStateAdapter(fragmetManager, lifecycle){

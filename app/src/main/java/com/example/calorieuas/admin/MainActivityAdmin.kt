@@ -1,4 +1,4 @@
-package com.example.calorieuas
+package com.example.calorieuas.admin
 
 import android.content.ContentValues.TAG
 import android.content.Intent
@@ -6,17 +6,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Toast
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.calorieuas.table.FoodItem
+import com.example.calorieuas.SessionManager
+import com.example.calorieuas.adapter.FoodAdapter
+import com.example.calorieuas.dao.FoodItemDao
+import com.example.calorieuas.database.AppDatabase
 import com.example.calorieuas.databinding.ActivityMainAdminBinding
+import com.example.calorieuas.dialog.AdminDialog
+import com.example.calorieuas.login.LoginSignUp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.tasks.await
-import kotlinx.coroutines.withContext
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 

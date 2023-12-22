@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,22 +18,22 @@
         android:theme="@style/Theme.CalorieUAS"
         tools:targetApi="31">
         <activity
-            android:name=".KustomMakanan"
+            android:name=".user.KustomMakanan"
             android:exported="false" />
         <activity
-            android:name=".MainActivityAdmin"
+            android:name=".admin.MainActivityAdmin"
             android:exported="false" />
         <activity
-            android:name=".ListMakanan"
+            android:name=".user.ListMakanan"
             android:exported="false" />
         <activity
             android:name=".SetTargetActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".user.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginSignUp"
+            android:name=".login.LoginSignUp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

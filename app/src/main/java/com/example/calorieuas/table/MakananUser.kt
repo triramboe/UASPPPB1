@@ -1,4 +1,4 @@
-package com.example.calorieuas
+package com.example.calorieuas.table
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

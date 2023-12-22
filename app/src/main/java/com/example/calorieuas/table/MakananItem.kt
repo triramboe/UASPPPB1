@@ -1,4 +1,4 @@
-package com.example.calorieuas
+package com.example.calorieuas.table
 
 data class MakananItem(
     var itemName: String ?= null,

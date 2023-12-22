@@ -1,13 +1,13 @@
-package com.example.calorieuas
+package com.example.calorieuas.dialog
 
-import android.app.Activity
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.fragment.app.DialogFragment
-import androidx.room.ColumnInfo
+import com.example.calorieuas.user.MainActivity
+import com.example.calorieuas.table.MakananUser
 import com.example.calorieuas.databinding.RiwayatMakananBinding
 
 class RiwayatDialog (private val activity: MainActivity, private  val makanan: MakananUser): DialogFragment() {

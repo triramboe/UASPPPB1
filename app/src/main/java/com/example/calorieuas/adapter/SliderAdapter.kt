@@ -1,4 +1,4 @@
-package com.example.calorieuas
+package com.example.calorieuas.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager.widget.PagerAdapter
+import com.example.calorieuas.R
 
 class SliderAdapter(var dataSlider: ArrayList<Int>, var context: FragmentActivity?) : PagerAdapter() {
 
